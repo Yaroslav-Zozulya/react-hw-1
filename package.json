@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Yaroslav-Zozulya.github.io/react-1-1/",
+  "homepage": "https://Yaroslav-Zozulya.github.io/react-hw-1/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
