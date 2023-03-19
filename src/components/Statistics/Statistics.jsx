@@ -1,17 +1,17 @@
 import StatItem from 'components/StatItem/StatItem';
-import React from 'react';
+import { Section, StatList, Title } from './Statistics.styled';
 
 const Statistics = ({ title, stats }) => {
   return (
-    <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+    <Section className="statistics">
+      {title && <Title className="title">{title}</Title>}
 
-      <ul className="stat-list">
+      <StatList className="stat-list">
         {stats.map(({ id, label, percentage }) => (
           <StatItem key={id} label={label} percentage={percentage} />
         ))}
-      </ul>
-    </section>
+      </StatList>
+    </Section>
   );
 };
 

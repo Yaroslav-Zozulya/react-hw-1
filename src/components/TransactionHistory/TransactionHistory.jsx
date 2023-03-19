@@ -1,22 +1,22 @@
 import Transaction from 'components/Transaction/Transaction';
-
+import { Table, Thead } from './TransactionHistory.styled';
 const TransactionHistory = ({ items }) => {
   return (
-    <table className="transaction-history">
-      <thead>
+    <Table className="transaction-history">
+      <Thead>
         <tr>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
         </tr>
-      </thead>
+      </Thead>
 
       <tbody>
-        {items.map(item => (
-          <Transaction key={item.id} items={item} />
+        {items.map((item, index) => (
+          <Transaction key={item.id} items={item} index={index} />
         ))}
       </tbody>
-    </table>
+    </Table>
   );
 };
 

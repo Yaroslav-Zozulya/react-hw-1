@@ -1,10 +1,12 @@
-const Transaction = ({ items: { type, amount, currency } }) => {
+import { Cell, Row } from './Transaction.styled';
+
+const Transaction = ({ items: { type, amount, currency }, index }) => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <Row index={index}>
+      <Cell>{type}</Cell>
+      <Cell>{amount}</Cell>
+      <Cell>{currency}</Cell>
+    </Row>
   );
 };
 

@@ -12,6 +12,7 @@ export const StatsItem = styled.li`
   flex-direction: column;
   text-align: center;
   border-top: 1px solid black;
+
   :not(:last-child) {
     border-right: 1px solid black;
   }

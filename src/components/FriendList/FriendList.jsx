@@ -1,9 +1,9 @@
 import FriendListItem from 'components/FriendListItem/FriendListItem';
-import React from 'react';
+import { List } from './FriendList.styled';
 
 const FriendList = ({ friends }) => {
   return (
-    <ul className="friend-list">
+    <List className="friend-list">
       {friends.map(({ avatar, name, isOnline, id }) => {
         return (
           <FriendListItem
@@ -14,7 +14,7 @@ const FriendList = ({ friends }) => {
           />
         );
       })}
-    </ul>
+    </List>
   );
 };
 
